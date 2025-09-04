@@ -17,6 +17,7 @@ import com.fatec.composeintro.ui.components.EmailInputText
 import com.fatec.composeintro.ui.components.LoginButton
 import com.fatec.composeintro.ui.components.TituloDaTela
 import com.fatec.composeintro.ui.screens.ProfileLayout
+import com.fatec.composeintro.ui.screens.login.LoginScreen
 import com.fatec.composeintro.ui.theme.ComposeIntroTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,21 +27,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeIntroTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Column {
-                        Column(
-                            modifier = Modifier.padding(innerPadding)
-                        ) {
-                            Greeting(name = "Android")
-                            TituloDaTela()
-                            EmailInputText()
-                            LoginButton()
-                        }
-                        Row {
-                            TituloDaTela()
-                            EmailInputText()
-                            LoginButton()
-                        }
-                        ProfileLayout()
+
+                    Column(
+                        modifier = Modifier.padding(innerPadding)
+                    ) {
+                        LoginScreen()
                     }
                 }
             }
