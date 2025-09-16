@@ -33,34 +33,47 @@ fun AlignmentDemoScreen(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.SpaceAround,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text("Item 01", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Red))
-            Text("Item 02", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Cyan))
-            Text("Item 03", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Green))
+            Text(
+                "Item 01", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Red)
+            )
+            Text(
+                "Item 02", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Cyan)
+            )
+            Text(
+                "Item 03", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Green)
+            )
         }
 
         Spacer(modifier = Modifier.height(16.dp))
         Column(
             modifier = Modifier
+                .height(200.dp)
                 .fillMaxWidth()
                 .background(Color.Yellow),
             horizontalAlignment = Alignment.End,
             verticalArrangement = Arrangement.SpaceBetween
         ) {
-            Text("Item 01", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Red))
-            Text("Item 02", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Cyan))
-            Text("Item 03", modifier = Modifier
-                .size(50.dp)
-                .background(Color.Green))
+            Text(
+                "Item 01", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Red)
+            )
+            Text(
+                "Item 02", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Cyan)
+            )
+            Text(
+                "Item 03", modifier = Modifier
+                    .size(50.dp)
+                    .background(Color.Green)
+            )
         }
     }
 }
