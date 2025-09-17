@@ -19,7 +19,7 @@ fun LazyRowComponent(
     modifier: Modifier = Modifier
 ) {
     val userList = listOf(
-        User(name = "Raphael", 40),
+        User(name = "Raph", 40),
         User(name = "Pedro", 25),
         User(name = "Renato", 28),
         User(name = "Giba", 40),
